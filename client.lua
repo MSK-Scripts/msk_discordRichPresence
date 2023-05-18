@@ -1,5 +1,3 @@
-MSK = exports.msk_core:getCoreObject()
-
 CreateThread(function()
 	while true do
 		local sleep = Config.Refresh * 1000
@@ -17,12 +15,8 @@ CreateThread(function()
 		SetRichPresence(#onlinePlayers .. "/" .. Config.ServerSlots .. " - ID: " .. id .. " | Name: " .. name)
 
 		local button = Config.Buttons
-		if button['0'] then
-    		SetDiscordRichPresenceAction(0, button['0'].name, button['0'].link)
-		end
-		if button['1'] then
-    		SetDiscordRichPresenceAction(1, button['1'].name, button['1'].link)
-		end
+		if button['0'] then SetDiscordRichPresenceAction(0, button['0'].name, button['0'].link) end
+		if button['1'] then SetDiscordRichPresenceAction(1, button['1'].name, button['1'].link) end
 		
 		Wait(sleep)
 	end

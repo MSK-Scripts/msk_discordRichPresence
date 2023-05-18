@@ -1,5 +1,3 @@
-MSK = exports.msk_core:getCoreObject()
-
 MSK.RegisterCallback('msk_discordRichPresence:getPlayers', function(source, cb)
     local OnlinePlayers = {}
 
