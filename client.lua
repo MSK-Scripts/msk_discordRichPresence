@@ -2,7 +2,7 @@ CreateThread(function()
 	while true do
 		local sleep = Config.Refresh * 1000
 
-		local onlinePlayers = MSK.TriggerCallback('msk_discordRichPresence:getPlayers')
+		local onlinePlayers = MSK.Trigger('msk_discordRichPresence:getPlayers')
 		local id = GetPlayerServerId(PlayerId())
 		local name = GetPlayerName(PlayerId())
 		-- print("Online players", #onlinePlayers)

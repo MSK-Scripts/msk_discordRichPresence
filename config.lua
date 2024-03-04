@@ -1,6 +1,6 @@
 Config = {}
 
-Config.AppId = '1006576173515538552' -- Make an application @ https://discordapp.com/developers/applications/ ID can be found there.
+Config.AppId = '105595432' -- Make an application @ https://discordapp.com/developers/applications/ ID can be found there.
 Config.Asset = 'msk_scripts' -- Go to https://discordapp.com/developers/applications/APPID/rich-presence/assets
 Config.ServerSlots = 64 -- Set the Slots of your Server
 Config.ServerName = 'MSK Scripts'
